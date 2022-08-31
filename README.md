@@ -27,3 +27,5 @@ $ <TBD>
 * JSON Validation
 * Interrogating elements in an array
 * Incrementing over data providers
+* Standard Hamcrest Matchers
+* Custom Hamcrest Matchers
