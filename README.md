@@ -14,13 +14,13 @@ https://datausa.io/
 
 ### Run all Tests
 
-$ <TBD>
+$ ./gradlew test
 
 ### Run a  singe test
-$ <TBD>
+$ ./gradlew test --tests "com.nemesissy.tests.States"
 
 ### Location of the HTML report
-<TBD>
+./build/reports/tests/test/index.html
 
 ### Usages
 * Object Counts
