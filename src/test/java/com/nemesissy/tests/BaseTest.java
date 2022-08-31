@@ -17,9 +17,8 @@ public class BaseTest {
     public Response response;
     public ValidatableResponse vResponse;
 
-    @DataProvider(name = "creds")
-    public Object[][] allCreds() {
-
+    @DataProvider(name = "states")
+    public Object[][] verifyStates() {
         /*
         State Name
         State Key
@@ -27,12 +26,12 @@ public class BaseTest {
          */
         return new String[][] {
                 {"Texas" , "Geography-State-04000US48", "04000US48"},
-                {"1" , "2", "3"},
-                {"1" , "2", "3"},
+                {"Colorado" , "Geography-State-04000US08", "04000US08"},
+                {"Mississippi" , "Geography-State-04000US28", "04000US28"},
         };
     }
 
-    @DataProvider(name = "states")
+    @DataProvider(name = "creds")
     public Object[] allStates() {
 
         return new String[] {
