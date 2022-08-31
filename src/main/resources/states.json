@@ -1,0 +1,117 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "items": {
+    "type": "object",
+    "properties": {
+      "results": {
+        "type": "array",
+        "properties": {
+          "items": {
+            "type": "object",
+            "properties": {
+              "alts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dimension":  {"type": "string"},
+              "hierarchy":  {"type": "string"},
+              "id":         {"type": "string"},
+              "image":
+              {
+                "type": "object",
+                "properties": {
+                  "id":        {"type": "number"},
+                  "url":       {"type": "url"},
+                  "author":    {"type": "string"},
+                  "license":   {"type": "number"},
+                  "splash":    {"type": "string"},
+                  "thumb":     {"type": "string"},
+                  "createdAt": {"type": "string"},
+                  "updatedAt": {"type": "string"}
+                }
+              },
+              "key":        {"type": "string"},
+              "keywords":   {"type": "number"},
+              "name":       {"type": "string"},
+              "profile":    {"type": "string"},
+              "slug":       {"type": "string"},
+              "zvalue":     {"type": "number"},
+              "score":      {"type": "number"}
+            }
+          }
+        }
+      },
+      "query": {
+        "type": "object",
+        "properties": {
+          "dimension":   {"type": "string"},
+          "hierarchy":   {"type": "string"},
+          "limit":       {"type": "number"},
+          "q":           {"type": "string"}
+        }
+      },
+      "totals": {
+        "type": "object",
+        "properties": {
+          "Geography": {
+            "type": "object",
+            "properties": {
+              "Nation":  {"type": "number"},
+              "State":   {"type": "number"},
+              "County":  {"type": "number"},
+              "Place":   {"type": "number"},
+              "Congressional District:": {"type": "number"},
+              "MSA":     {"type": "number"},
+              "PUMA":    {"type": "number"}
+            }
+          },
+          "CIP": {
+            "type": "object",
+            "properties": {
+              "CIP2":  {"type": "number"},
+              "CIP4":  {"type": "number"},
+              "CIP6":  {"type": "number"}
+            }
+          },
+          "NAPCS": {
+            "type": "object",
+            "properties": {
+              "NAPCS Class:":  {"type": "number"},
+              "NAPCS Section": {"type": "number"},
+              "NAPCS Group":   {"type": "number"}
+            }
+          },
+          "PUMS Industry": {
+            "type": "object",
+            "properties": {
+              "Industry Sector":  {"type": "number"},
+              "Industry Sub-Sector":  {"type": "number"},
+              "Industry Group":  {"type": "number"}
+            }
+          },
+          "University": {
+            "type": "object",
+            "properties": {
+              "Carnegie Parent":  {"type": "number"},
+              "Carnegie":    {"type": "number"},
+              "University":  {"type": "number"}
+            }
+          },
+          "PUMS Occupation": {
+            "type": "object",
+            "properties": {
+              "Major Occupation Group":  {"type": "number"},
+              "Minor Occupation Group":  {"type": "number"},
+              "Broad Occupation":        {"type": "number"},
+              "Detailed Occupation":     {"type": "number"}
+            }
+          }
+        }
+      }
+    }
+  }
+}
