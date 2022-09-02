@@ -8,8 +8,9 @@ https://datausa.io/
 
 ### Pre-requisites ###
 
-* Im using IJ to create
-* Im using GRADLE to build
+* I'm using IJ to create
+* I'm using GRADLE to build
+* I'm usinf TestNG
 * I'm using Rest Assured
 
 ### Run all Tests
